@@ -1,0 +1,222 @@
+/* Acá van las selecciones */
+a {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    border-right: 100px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    font-size: larger;
+}
+
+header {
+    grid-area: header;
+}
+
+hr {
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+div ul {
+    align-self: center;
+    text-align: center;
+}
+
+div ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+div ul li a{
+    color: white;
+}
+
+form {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: main;
+}
+
+li {
+    text-align: center;
+}
+
+/* Acá van las clases */
+.container {
+    /* Este código es para centrar las clases */
+    display: flex;
+    justify-content: center;
+}
+.centered-menu {
+    border: solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer {
+    background-color: rgb(64, 33, 173);
+    height: 4em;
+    text-align: center;
+}
+
+.display-inline {
+    display: inline;
+}
+.image-background {
+    background-image: url('../images/background2.jpg')
+}
+
+.inline {
+    display: inline;
+}
+
+.justified {
+    text-align: justify;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.main-header {
+    background-color: rgb(64, 33, 173);
+}
+
+.not-underlined {
+    text-decoration: none;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.selectable-box {
+    background-color: rgb(29, 85, 190);
+    border-radius: 5px;
+    border: solid;
+    margin: 10px;
+    display: inline;
+    border-color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.white {
+    color: white;
+    
+}
+
+
+
+/* Acá van los id */
+#main-title {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    text-align: left;
+    margin-right: 25px;
+}
+
+#bold-footer-text {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#grilla {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 100px 1fr 100px ;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "header" 
+        "main" 
+        "footer";
+}
+
+#grilla-dos {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    grid-template-areas: "parte1 parte2";
+}
+
+#special-ordered-list {
+    list-style-type: upper-roman;
+}
+
+/* Acá van los media queries */
+
+/* Media Queries para Mobile */
+@media only screen and (min-width: 0px) and (max-width: 500px){
+    /* Media Query para el Index */
+	.gridContainerIndex{
+		display: grid; 
+        grid-template-areas:
+		"header" 
+        "main" 
+		"footer";
+		grid-template-columns: 100%;
+        /* Aumentamos el tamaño del header para acomodar la barra de navegación flex en mobile */
+		grid-template-rows: 400px auto 100px;
+	}
+    /* Media Query para Tipos de Monedas */
+    .gridContainerTipos{
+        display: grid; 
+        grid-template-areas:
+        "header" 
+        "main" 
+        "footer";
+        grid-template-columns: 100%;
+        /* Aumentamos el tamaño del header para acomodar la barra de navegación flex en mobile */
+        grid-template-rows: 400px auto 100px; 
+    }
+}
+
+/* Media Queries para Desktop */
+@media only screen and (min-width: 500px){
+    /* Media Query para el Index */
+	.gridContainerIndex{
+		display: grid;
+        grid-template-areas:
+		    "header"	
+            "main"
+            "footer"; 
+        grid-template-columns: 1;
+        grid-template-rows: auto auto 100px; 
+        }
+    /* Media Query para Tipos de Monedas */
+    .gridContainerTipos{
+        display: grid; 
+        grid-template-areas:        
+            "header" 
+            "main" 
+            "footer";        
+        grid-template-columns: 1;
+        grid-template-rows: auto auto 100px;
+    }
+    }
