@@ -66,6 +66,9 @@ li {
 }
 
 /* Acá van las clases */
+.black {
+    color: black;
+}
 .container {
     /* Este código es para centrar las clases */
     display: flex;
@@ -77,6 +80,14 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -113,7 +124,7 @@ li {
 }
 
 .rotada {
-    transform: rotate(6deg);
+    transform: rotate(1deg);
 }
 
 .text-centered {
@@ -145,12 +156,13 @@ li {
     color: rgb(255, 255, 255);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 55px;
-    text-align: left;
+    text-align: center;
     margin-right: 25px;
 }
 
 #bold-footer-text {
     font-weight: bold;
+    font-size: 15;
     color: rgb(255, 255, 255);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
