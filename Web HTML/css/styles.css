@@ -15,7 +15,7 @@ h2 {
 }
 
 h3 {
-    font-size: larger;
+    font-size: 22px;
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: 2;
@@ -39,10 +39,10 @@ div ul {
     text-align: center;
 }
 
-div ul li {
+/* div ul li {
     display: inline;
     margin-right: 10px;
-}
+} */
 
 div ul li a{
     color: white;
@@ -61,13 +61,21 @@ main {
     grid-area: main;
 }
 
-li {
-    text-align: center;
-}
-
 /* Acá van las clases */
 .black {
     color: black;
+}
+
+.black-bordered {
+    padding: 5px 1px;
+    border: solid;
+    border-color: black;
+    border-radius: 2%;
+    border-width: 3px;
+}
+
+.big-text {
+    font-size: 22px;
 }
 .container {
     /* Este código es para centrar las clases */
@@ -87,6 +95,14 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+}
+
+.flex-special {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -115,6 +131,10 @@ li {
     text-align: left;
 }
 
+.low-margin {
+    margin: 5px 0px;
+}
+
 .main-header {
     background-color: rgb(64, 33, 173);
 }
@@ -129,6 +149,10 @@ li {
 
 .text-centered {
     text-align: center;
+}
+
+.side-margined {
+    margin: 0 5px;
 }
 
 .selectable-box {
@@ -157,7 +181,7 @@ li {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 55px;
     text-align: center;
-    margin-right: 25px;
+    margin: 10px 0px 5px 0px;
 }
 
 #bold-footer-text {
