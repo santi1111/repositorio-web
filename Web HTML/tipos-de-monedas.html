@@ -8,15 +8,53 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title>Cryptosofía</title>
-    
 </head>
 <body class = "gridContainerTipos">
     <header>
+        <!-- Acá va una sección con el H1 de la página -->
         <section>
             <h1 id = "main-title">Cryptosofía</h1>
-            <h3 class = "black text-centered"> Toda la información que necesitas sobre crypto en un solo lugar</h3>
+            <h3 class = "black text-centered low-margin" id = "animated-h3"> Toda la información que necesitas sobre crypto en un solo lugar</h3>
          </section>
 
+         <!-- Acá va una sección con los precios de las cryptos -->
+         <section>
+             <div>
+                <ul class = "flex" style="padding-left: 0px;">
+                    <!-- Cada list item es una crypto distinta -->
+                    <li class = "nav-item flex-special black-bordered anim1">
+                        <i class="fa-brands fa-bitcoin"></i>
+                        <p class = "side-margined">BTC</p>
+                        <p class = "side-margined">40.312,55 USD</p>
+                    </li>
+
+                    <li class = "nav-item flex-special black-bordered anim2">
+                        <i class="fa-brands fa-ethereum"></i>
+                        <p class = "side-margined">ETH</p>
+                        <p class = "side-margined">2587,37 USD</p>
+                    </li>
+
+                    <li class = "nav-item flex-special black-bordered anim3">
+                        <i class = "fa-solid fa-litecoin-sign"></i>
+                        <p class = "side-margined">LTC</p>
+                        <p class = "side-margined">152,34 USD</p>
+                    </li>
+
+                    <li class = "nav-item flex-special black-bordered anim2">
+                        <i class = "fa-solid fa-austral-sign"></i>
+                        <p class = "side-margined">ADA</p>
+                        <p class = "side-margined">0,9741 USD</p>
+                    </li>
+
+                    <li class = "nav-item flex-special black-bordered anim3">
+                        <i class = "fa-solid fa-coins"></i>
+                        <p class = "side-margined">SOL</p>
+                        <p class = "side-margined">92,15 USD</p>
+                    </li>
+                    
+                </ul>
+             </div>
+         </section>
         <!-- Acá arranca el nuevo navbar -->
          <section>
             <div class = "container">
@@ -47,36 +85,43 @@
     </header>
 
     <main>
-        <section>
-            <h3 class = "white">
-                Tipos de Criptomonedas
-            </h3>
-            <p class = "white">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Minima, quidem fugiat doloremque iusto fuga illum aspernatur adipisci quaerat totam
-                , ipsum quia non temporibus quo excepturi. Quidem id facilis consectetur debitis.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Minima, quidem fugiat doloremque iusto fuga illum aspernatur adipisci quaerat totam
-                , ipsum quia non temporibus quo excepturi. Quidem id facilis consectetur debitis.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Minima, quidem fugiat doloremque iusto fuga illum aspernatur adipisci quaerat totam
-                , ipsum quia non temporibus quo excepturi. Quidem id facilis consectetur debitis.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Minima, quidem fugiat doloremque iusto fuga illum aspernatur adipisci quaerat totam
-                , ipsum quia non temporibus quo excepturi. Quidem id facilis consectetur debitis.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Minima, quidem fugiat doloremque iusto fuga illum aspernatur adipisci quaerat totam
-                , ipsum quia non temporibus quo excepturi. Quidem id facilis consectetur debitis.
-            </p>
-            <!-- Acá vamos a poner una imagen -->
-            <div class = "container">
-                <div class = "child display-inline">
-                    <img src="images/ethereum.jpg" width = "350" height = "200" class = "img-thumbnail" alt="Una imagen sobre Ethereum">
-                    <img src="images/bitcoin.jpg" width = "350" height = "200" class = "img-thumbnail" alt="Una imagen sobre Bitcoin">
-                    <img src="images/dogecoin.jpg" width = "350" height = "200" class = "img-thumbnail" alt="Una imagen sobre Dogecoin">
-                </div>
-            </div>
-            
+        <section class = "grid-display-tipos">
+
+            <section class = "text-1"> 
+                <h3 class = "white"> Tipos de Criptomonedas</h3>
+                <p class = "white">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Minima, quidem fugiat doloremque iusto fuga illum aspernatur adipisci quaerat totam
+                    , ipsum quia non temporibus quo excepturi. Quidem id facilis consectetur debitis.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Minima, quidem fugiat doloremque iusto fuga illum aspernatur adipisci quaerat totam
+                    , ipsum quia non temporibus quo excepturi. Quidem id facilis consectetur debitis.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Minima, quidem fugiat doloremque iusto fuga illum aspernatur adipisci quaerat totam
+                    , ipsum quia non temporibus quo excepturi. Quidem id facilis consectetur debitis.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Minima, quidem fugiat doloremque iusto fuga illum aspernatur adipisci quaerat totam
+                    , ipsum quia non temporibus quo excepturi. Quidem id facilis consectetur debitis.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Minima, quidem fugiat doloremque iusto fuga illum aspernatur adipisci quaerat totam
+                    , ipsum quia non temporibus quo excepturi. Quidem id facilis consectetur debitis.
+                </p>
+                <h3 class = "text-centered"> Galería de Imágenes </h3>
+            </section>
+
+            <!-- Acá va la primera tande de imágenes -->
+            <section class = "images-1">
+                <img src="images/ethereum.jpg" width = "400" height = "200" class = "img-thumbnail" alt="Una imagen sobre Ethereum">
+                <img src="images/bitcoin.jpg" width = "400" height = "200" class = "img-thumbnail" alt="Una imagen sobre Bitcoin">
+                <img src="images/dogecoin.jpg" width = "400" height = "200" class = "img-thumbnail" alt="Una imagen sobre Dogecoin">
+            </section>
+
+            <!-- Acá va la segunda tande de imágenes -->
+            <section class = "images-2">
+                <img src="images/trading.jpg" width = "400" height = "200" class = "img-thumbnail" alt="Una imagen sobre Ethereum">
+                <img src="images/litecoin.jpg" width = "400" height = "200" class = "img-thumbnail" alt="Una imagen sobre Bitcoin">
+                <img src="images/numbers.jpg" width = "400" height = "200" class = "img-thumbnail" alt="Una imagen sobre Dogecoin">
+            </section>
         </section>
     </main>
 

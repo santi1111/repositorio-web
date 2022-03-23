@@ -16,9 +16,6 @@ h2 {
 
 h3 {
     font-size: 22px;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: 2;
 }
 
 header {
@@ -62,6 +59,41 @@ main {
 }
 
 /* Acá van las clases */
+
+.anim1 {
+ animation: anim1;
+ animation-duration: 5s;
+ animation-iteration-count: 4;   
+}
+
+.anim2 {
+    animation: anim2;
+    animation-duration: 7s;
+    animation-iteration-count: 4;   
+   }
+
+.anim3 {
+ animation: anim3;
+ animation-duration: 10s;
+ animation-iteration-count: 4;   
+}
+
+.article-1 {
+    grid-area: article-1;
+}
+
+.article-2 {
+    grid-area: article-2;
+    padding: 20px;
+}
+
+.article-3 {
+    grid-area: article-3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .black {
     color: black;
 }
@@ -77,6 +109,15 @@ main {
 .big-text {
     font-size: 22px;
 }
+
+.btc-anim {
+    grid-area: "btc-anim";
+}
+
+.btc-chart {
+    grid-area: "btc-chart";
+    background-color: black;
+}
 .container {
     /* Este código es para centrar las clases */
     display: flex;
@@ -88,6 +129,10 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.display-inline {
+    display: inline;
 }
 
 .flex {
@@ -112,8 +157,40 @@ main {
     text-align: center;
 }
 
-.display-inline {
-    display: inline;
+.grid-display-tipos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-areas: 
+    "text-1"
+    "images-1"
+    "images-2";
+    grid-row-gap: 5px;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "article-1 article-2"
+    "article-1 article-2"
+    "article-3 article-3";
+    grid-column-gap: 5px;
+}
+
+.images-1 {
+grid-area: images-1;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.images-2 {
+    grid-area: images-2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .image-background {
     background-image: url('../images/background2.jpg')
@@ -147,6 +224,10 @@ main {
     transform: rotate(1deg);
 }
 
+.text-1 {
+    grid-area: text-1;
+}
+
 .text-centered {
     text-align: center;
 }
@@ -175,13 +256,10 @@ main {
 
 
 /* Acá van los id */
-#main-title {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 55px;
-    text-align: center;
-    margin: 10px 0px 5px 0px;
+#animated-h3 {
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: 2;
 }
 
 #bold-footer-text {
@@ -207,6 +285,15 @@ main {
     grid-template-columns: 2;
     grid-template-rows: 1;
     grid-template-areas: "parte1 parte2";
+}
+
+#main-title {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
 }
 
 #special-ordered-list {
@@ -277,5 +364,55 @@ main {
 
         100% {
             opacity: 1;
+        }
+    }
+
+    @keyframes anim1 {
+        0% {
+            background-color: lightgreen;
+        }
+
+        50% {
+            background-color: green;
+        }
+
+        75% {
+            background-color: red;
+        }
+
+        100% {
+            background-color: lightcoral;
+        }
+    }
+
+    @keyframes anim2 {
+        0% {
+            background-color: green;
+        }
+
+        50% {
+            background-color: red;
+        }
+
+        75% {
+            background-color: lavender;
+        }
+
+        100% {
+            background-color: salmon;
+        }
+    }
+
+    @keyframes anim3 {
+        0% {
+            background-color: green;
+        }
+
+        50% {
+            background-color: lightgreen;
+        }
+
+        100% {
+            background-color: red;
         }
     }
