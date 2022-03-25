@@ -20,8 +20,9 @@ $background-color : "FFFFFF";
 .container-special {
     /* Este código es para centrar las clases */
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
-    width: 300px;
 }
 
 .footer {
