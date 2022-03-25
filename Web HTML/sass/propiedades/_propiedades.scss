@@ -1,11 +1,46 @@
+// Acá van las variables globales
 $background-color : "FFFFFF";
+$var1 : 55px;
+$var2 : 5px;
+
+// Acá van los selectores
+// Arrancamos por el selector global
 * {
     background-color: $background-color;
     box-sizing: border-box;
 }
 
-.main-header {
-    background-color: rgb(80, 119, 87);
+//Ahora usamos la propiedad de anidado de SASS para replicar lo que con CSS hicimos con un ID.
+h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        //Usamos una de las variables para definir el tamaño de la letra
+        font-size: $var1;
+        margin: $var2 0px $var2 0px;
+        text-align: center;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin: 5px;
+}
+
+section {
+    div {
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .centered-menu {
@@ -26,7 +61,7 @@ $background-color : "FFFFFF";
 }
 
 .footer {
-    background-color: rgb(64, 33, 173);
+    background-color: rgb(80, 119, 87);
     height: 4em;
     text-align: center;
 }
@@ -35,8 +70,12 @@ $background-color : "FFFFFF";
     /* Este código es para centrar las clases */
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: grey;
     width: 300px;
+}
+
+.main-header {
+    background-color: rgb(80, 119, 87);
 }
 
 .not-underlined {
@@ -44,8 +83,8 @@ $background-color : "FFFFFF";
 }
 
 .selectable-box {
-    background-color: rgb(29, 85, 190);
-    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
     border: solid;
     margin: 10px;
     display: inline;
