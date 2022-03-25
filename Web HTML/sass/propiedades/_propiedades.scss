@@ -3,3 +3,62 @@ $background-color : "FFFFFF";
     background-color: $background-color;
     box-sizing: border-box;
 }
+
+.main-header {
+    background-color: rgb(80, 119, 87);
+}
+
+.centered-menu {
+    border: solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: purple;
+}
+
+.container-special {
+    /* Este código es para centrar las clases */
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+.footer {
+    background-color: rgb(64, 33, 173);
+    height: 4em;
+    text-align: center;
+}
+
+.form-centered {
+    /* Este código es para centrar las clases */
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 300px;
+}
+
+.not-underlined {
+    text-decoration: none;
+}
+
+.selectable-box {
+    background-color: rgb(29, 85, 190);
+    border-radius: 5px;
+    border: solid;
+    margin: 10px;
+    display: inline;
+    border-color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.text-centered {
+    text-align: center;
+}
+
+
+.white {
+    color: white;
+}

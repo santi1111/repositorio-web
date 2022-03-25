@@ -1,3 +1,52 @@
+@charset "UTF-8";
 * {
-  background-color: blue;
+  background-color: "FFFFFF";
   box-sizing: border-box; }
+
+.main-header {
+  background-color: #507757; }
+
+.centered-menu {
+  border: solid white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: purple; }
+
+.container-special {
+  /* Este código es para centrar las clases */
+  display: flex;
+  justify-content: center;
+  width: 300px; }
+
+.footer {
+  background-color: #4021ad;
+  height: 4em;
+  text-align: center; }
+
+.form-centered {
+  /* Este código es para centrar las clases */
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 300px; }
+
+.not-underlined {
+  text-decoration: none; }
+
+.selectable-box {
+  background-color: #1d55be;
+  border-radius: 5px;
+  border: solid;
+  margin: 10px;
+  display: inline;
+  border-color: white;
+  text-align: center;
+  padding: 10px; }
+
+.text-centered {
+  text-align: center; }
+
+.white {
+  color: white; }
