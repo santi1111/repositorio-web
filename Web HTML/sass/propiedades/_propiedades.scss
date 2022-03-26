@@ -1,3 +1,6 @@
+//Acá van los imports de fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
 // Acá van las variables globales
 $background-color : "FFFFFF";
 $var1 : 55px;
@@ -8,6 +11,9 @@ $var2 : 5px;
 * {
     background-color: $background-color;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
 }
 
 //Ahora usamos la propiedad de anidado de SASS para replicar lo que con CSS hicimos con un ID.
@@ -31,6 +37,29 @@ h1 {
 h2 {
     text-align: center;
     margin: 5px;
+}
+
+h4 {
+    margin: 0px;
+    padding: 0px;
+    height: 15px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+input {
+    margin: 5px;
+    text-align: center;
+}
+
+label {
+    text-align: center;
 }
 
 section {
@@ -58,6 +87,8 @@ section {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    height: 300px;
+    align-items: center;
 }
 
 .footer {
@@ -67,11 +98,12 @@ section {
 }
 
 .form-centered {
-    /* Este código es para centrar las clases */
-    display: flex;
-    justify-content: center;
+    /* Este código es para modificar el form */
+    display: block;
     background-color: grey;
     width: 300px;
+    height: 250px;
+    border-radius: 4px;
 }
 
 .main-header {
