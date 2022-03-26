@@ -5,7 +5,8 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  border: none; }
 
 h1 {
   display: flex;
