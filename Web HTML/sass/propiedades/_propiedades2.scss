@@ -17,7 +17,7 @@ $colores:(
 
 @each $clave, $valor in $colores {
     .texto-campo--#{$clave} {
-        color: $valor;
+        background-color: $valor;
     }
 }
 
@@ -148,6 +148,12 @@ main {
     background-color: black;
 }
 
+.btn-send {
+    color: map-get($colores, color2);
+    border-radius: 5px;
+    border-color: white;
+}
+
 .centered-menu {
     border: solid white;
     display: flex;
@@ -188,6 +194,14 @@ main {
 .flex {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;

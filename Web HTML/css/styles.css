@@ -2,16 +2,16 @@
 /* Acá van los imports */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
 .texto-campo--color1 {
-  color: blue; }
+  background-color: blue; }
 
 .texto-campo--color2 {
-  color: black; }
+  background-color: black; }
 
 .texto-campo--color3 {
-  color: grey; }
+  background-color: grey; }
 
 .texto-campo--color4 {
-  color: white; }
+  background-color: white; }
 
 /* Acá van las selecciones */
 a {
@@ -110,6 +110,11 @@ main {
   grid-area: "btc-chart";
   background-color: black; }
 
+.btn-send {
+  color: black;
+  border-radius: 5px;
+  border-color: white; }
+
 .centered-menu {
   border: solid white;
   display: flex;
@@ -145,6 +150,13 @@ main {
 .flex {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
