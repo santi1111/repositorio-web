@@ -228,12 +228,11 @@ main {
   text-align: center;
   border-radius: 4px; }
 
-.grid-display-tipos {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 250px 250px 250px;
-  grid-template-areas: "text-1" "images-1" "images-2";
-  grid-row-gap: 5px; }
+.flex-display-tipos {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start; }
 
 .grid-main {
   display: grid;
@@ -246,9 +245,13 @@ main {
 .grid-header {
   display: grid;
   grid-template-columns: 20% 65% 15%;
-  grid-template-rows: 60px 80px;
+  grid-template-rows: 90px 90px;
   grid-template-areas: "logo page-title config" "empty crypto-prices config";
   background-color: #c7ccd6; }
+
+.iframe-yt {
+  width: 560;
+  height: 315; }
 
 .inferior {
   display: flex;
@@ -259,12 +262,14 @@ main {
   grid-area: images-1;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around; }
 
 .images-2 {
   grid-area: images-2;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around; }
 
 .image-background {
@@ -395,37 +400,18 @@ main {
   text-decoration: underline; }
 
 /* Acá van los media queries */
-/* Media Queries para Mobile */
-@media only screen and (min-width: 0px) and (max-width: 500px) {
-  /* Media Query para el Index */
-  .gridContainerIndex {
-    display: grid;
-    grid-template-areas: "header"  "main"  "footer";
-    grid-template-columns: 100%;
-    /* Aumentamos el tamaño del header para acomodar la barra de navegación flex en mobile */
-    grid-template-rows: 400px auto 100px; }
-  /* Media Query para Tipos de Monedas */
-  .gridContainerTipos {
-    display: grid;
-    grid-template-areas: "header"  "main"  "footer";
-    grid-template-columns: 100%;
-    /* Aumentamos el tamaño del header para acomodar la barra de navegación flex en mobile */
-    grid-template-rows: 400px auto 100px; } }
+@media screen and (max-width: 1050px) {
+  .grid-header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center; } }
 
-/* Media Queries para Desktop */
-@media only screen and (min-width: 500px) {
-  /* Media Query para el Index */
-  .gridContainerIndex {
-    display: grid;
-    grid-template-areas: "header"	 "main" "footer";
-    grid-template-columns: 1;
-    grid-template-rows: auto auto 100px; }
-  /* Media Query para Tipos de Monedas */
-  .gridContainerTipos {
-    display: grid;
-    grid-template-areas: "header"  "main"  "footer";
-    grid-template-columns: 1;
-    grid-template-rows: auto auto 100px; } }
+@media screen and (max-width: 600px) {
+  .iframe-yt {
+    width: 300;
+    height: 180;
+    background-color: red; } }
 
 /* Acá van las animaciones */
 @keyframes aparecer {
