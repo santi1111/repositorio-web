@@ -1,18 +1,23 @@
 /* Acá van los imports */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 // Acá van las variables
 $azul: blue;
 $negro: black;
 $gris: grey;
 $blanco: white;
+$gris-especial: rgb(130, 139, 148);
+$negro-especial: rgb(25, 28, 31);
 
 // Acá van los maps
 $colores:(
     color1: $azul,
     color2: $negro,
     color3: $gris,
-    color4: $blanco
+    color4: $blanco,
+    color5: $gris-especial,
+    colo6: $negro-especial
 );
 
 @each $clave, $valor in $colores {
@@ -148,10 +153,44 @@ main {
     background-color: black;
 }
 
+.btn-black {
+    background-color: black;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-family: Lato, sans-serif;
+    padding: 7px;
+    text-decoration: none;
+    margin: 5px 10px 10px 10px;
+}
+
+.btn-horizontal {
+    background-color: rgb(130, 139, 148);
+    border-radius: 10px;
+    border: 0;
+    color: black;
+    font-family: Lato, sans-serif;
+    padding: 5px;
+    text-decoration: none;
+    margin: 0px 0px 5px 0px;
+    font-size: 12px;
+}
+
 .btn-send {
     color: map-get($colores, color2);
     border-radius: 5px;
     border-color: white;
+}
+
+.btn-white {
+    background-color: white;
+    border-radius: 10px;
+    border: 0;
+    color: rgb(25, 28, 31);
+    font-family: Lato, sans-serif;
+    padding: 7px;
+    text-decoration: none;
+    margin: 5px 10px 10px 10px;
 }
 
 .centered-menu {
@@ -176,6 +215,26 @@ main {
     justify-content: center;
     height: 300px;
     align-items: center;
+}
+
+.config {
+    grid-area: config;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.crypto-prices {
+    grid-area: crypto-prices;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty {
+    background-color: transparent;
+    grid-area: empty;
 }
 
 .form-centered {
@@ -243,6 +302,23 @@ main {
     grid-column-gap: 5px;
 }
 
+.grid-header {
+    display: grid;
+    grid-template-columns: 20% 65% 15%;
+    grid-template-rows: 60px 80px;
+    grid-template-areas: 
+    "logo page-title config"
+    "empty crypto-prices config";
+    background-color: #c7ccd6;
+}
+
+.inferior {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .images-1 {
 grid-area: images-1;
 display: flex;
@@ -268,6 +344,13 @@ justify-content: space-around;
     text-align: justify;
 }
 
+.logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .left-align {
     text-align: left;
 }
@@ -282,6 +365,13 @@ justify-content: space-around;
 
 .not-underlined {
     text-decoration: none;
+}
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    grid-area: page-title;
 }
 
 .rotada {
@@ -312,6 +402,37 @@ justify-content: space-around;
     
 }
 
+.superior {
+    display: flex;
+    flex: row;
+    justify-content: center;
+}
+
+.upper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: rgb(199, 204, 214);
+}
+
+.u-left {
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+}
+
+.u-center {
+    display: block;
+    width: 60%;
+}
+
+.u-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .white {
     color: white;
 }
@@ -319,12 +440,6 @@ justify-content: space-around;
 
 
 /* Acá van los id */
-#animated-h3 {
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: 2;
-}
-
 #bold-footer-text {
     font-weight: bold;
     font-size: 24px;
@@ -350,13 +465,20 @@ justify-content: space-around;
     grid-template-areas: "parte1 parte2";
 }
 
+#h2-title {
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 25px;
+    margin: 5px;
+}
+
 #main-title {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 55px;
+    color: rgb(0, 0, 0);
+    font-family: Lato, sans-serif;
+    font-size: 45px;
     text-align: center;
-    margin: 10px 0px 5px 0px;
+    margin: 5px 0px 5px 0px;
 }
 
 #special-ordered-list {
