@@ -251,9 +251,8 @@ main {
 
 .inferior {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; }
+  flex-direction: row;
+  justify-content: space-between; }
 
 .images-1 {
   grid-area: images-1;
@@ -290,6 +289,9 @@ main {
 
 .main-header {
   background-color: #4021ad; }
+
+.navigation-bar {
+  background-color: transparent; }
 
 .not-underlined {
   text-decoration: none; }
