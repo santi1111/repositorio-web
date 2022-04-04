@@ -300,6 +300,7 @@ main {
     "article-1 article-2"
     "article-3 article-3";
     grid-column-gap: 5px;
+    overflow: scroll;
 }
 
 .grid-header {
