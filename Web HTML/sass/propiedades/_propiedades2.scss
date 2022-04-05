@@ -339,6 +339,11 @@ justify-content: space-around;
     background-image: url('../images/background2.jpg')
 }
 
+.image-team {
+    width: 560;
+    height: 300;
+}
+
 .inline {
     display: inline;
 }
@@ -511,7 +516,13 @@ justify-content: space-around;
         height: 180;
         background-color: red;
     }
+
+    .image-team {
+        width: 300;
+        height: 180;
+    }
 }
+
     /* Acá van las animaciones */
     @keyframes aparecer {
         0% {

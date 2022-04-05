@@ -275,6 +275,10 @@ main {
 .image-background {
   background-image: url("../images/background2.jpg"); }
 
+.image-team {
+  width: 560;
+  height: 300; }
+
 .inline {
   display: inline; }
 
@@ -411,7 +415,10 @@ main {
   .iframe-yt {
     width: 300;
     height: 180;
-    background-color: red; } }
+    background-color: red; }
+  .image-team {
+    width: 300;
+    height: 180; } }
 
 /* Acá van las animaciones */
 @keyframes aparecer {
